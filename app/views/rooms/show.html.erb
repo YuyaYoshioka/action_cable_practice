@@ -1,0 +1,13 @@
+<h1>Chat room</h1>
+
+<h2><%= "あなた:#{@login_user.name}" %></h2>
+<h2><%= "あいて:#{@talked_user.name}" %></h2>
+
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<form>
+  <label>Say something:</label><br>
+  <input type="text" data-behavior="room_speaker">
+</form>

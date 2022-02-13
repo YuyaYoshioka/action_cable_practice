@@ -1,0 +1,7 @@
+<h1>Login</h1>
+
+<%= form_with url: { controller: 'sessions', action: 'create' } do |f| %>
+  <%= f.label '名前' %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
